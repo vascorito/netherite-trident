@@ -5,11 +5,11 @@
 	"name": "Netherite Trident",
 	"description": "Adds THE Netherite Trident.",
 	"authors": [
-		"Me!"
+		"vascorito"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/netherite-trident",
+		"sources": "https://github.com/vascorito/netherite-trident"
 	},
 	"license": "MIT",
 	"icon": "assets/netherite-trident/icon.png",
@@ -39,6 +39,6 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"another-mod": "https://www.curseforge.com/minecraft/mc-mods/trident-overload"
 	}
 }
