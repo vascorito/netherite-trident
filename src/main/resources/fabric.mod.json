@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "netherite-trident",
+	"version": "${version}",
+	"name": "Netherite Trident",
+	"description": "Adds THE Netherite Trident.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/netherite-trident/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.vascorito.NetheriteTrident"
+		],
+		"client": [
+			"net.vascorito.NetheriteTridentClient"
+		],
+		"fabric-datagen": [
+			"net.vascorito.datagen.NetheriteTridentDataGenerator"
+		]
+	},
+	"mixins": [
+		"netherite-trident.mixins.json",
+		{
+			"config": "netherite-trident.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
